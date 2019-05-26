@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/chanxinguidao/SpringCloudConfig/
+          search-paths: config
+          username: hello
+          password: hello
+      label: master
+
+server:
+  port: 8888
